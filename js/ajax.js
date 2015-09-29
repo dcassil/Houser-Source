@@ -29,8 +29,8 @@ define([], function () {
 					options,
 					cache_resp;
 
-				parse = typeof parse === 'undefined' ? true : false;
-				use_cache = typeof use_cache === 'undefined' ? true : false;
+				parse = typeof parse === 'undefined' ? true : parse;
+				use_cache = typeof use_cache === 'undefined' ? true : use_cache;
 
 				options = {
 					type: method,
