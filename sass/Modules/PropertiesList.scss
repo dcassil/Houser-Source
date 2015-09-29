@@ -1,0 +1,45 @@
+$module-selector: '.propertiesList';
+
+#{$module-selector} {
+   margin: 0;
+   padding: 0 10px;
+
+   &_item {
+
+      &_primary {
+         font-size: 12pt;
+         & .right {
+            float: right;
+         }
+      }
+      &_secondary {
+         margin-left: 10px;
+         margin-top: 3px;
+         font-size: 8pt;
+      }
+      &_set {
+
+      }
+   }
+   &_list {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      list-style: none;
+      padding: 10px;
+      border-bottom: 1px solid rgba(62, 62, 62, 0.41);
+      cursor: pointer;
+   }
+   &_item {
+      font-weight: 200;
+      text-align: center;
+      margin-right: 20px;
+      font-size: 12pt;
+      display: inline-block;
+      -webkit-flex-grow: 1;
+      flex-grow: 1;
+   }
+}

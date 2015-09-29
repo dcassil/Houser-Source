@@ -1,0 +1,11 @@
+<div class="pages_flex_wrapper">
+	<ul class="propertyLists">
+		<%_.each(lists, function (list) { %>
+			<li class="propertyLists_list houser_prop_list" data-list=<%=list.get('name')%>>
+				<span class="propertyLists_item"><%=list.get('name')%></span>
+				<span class="propertyLists_item">Sherif Sale</span>
+				<span class="propertyLists_item"><%=list.get('properties').length%></span>
+			</li>
+		<%});%>
+	</ul>
+</div>

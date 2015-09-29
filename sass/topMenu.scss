@@ -1,0 +1,40 @@
+/*Top Menu*/
+.statusBarSpacer {
+   height: 10px;
+   width: 100%;
+}
+.topMenu {
+   width: 100%;
+   height: 45px;
+   padding: 5px 25px;
+   box-sizing: border-box;
+   background-color: #CC5858;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   border-bottom: 1px solid white;
+   z-index: 5;
+}
+.topMenu_flex {
+   display: -webkit-flex;
+   display: flex;
+   margin: 5px 0;
+}
+.topMenu_item {
+   position: relative;
+   width: 75px;
+}
+.topMenu_item.left {
+   float: left;
+   text-align: left;
+}
+.topMenu_item.center {
+   width: 100%;
+   text-align: center;
+}
+.topMenu_item.right {
+   float: right;
+   text-align: right;
+}
+/*Top Menu*/

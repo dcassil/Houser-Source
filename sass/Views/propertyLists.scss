@@ -1,0 +1,31 @@
+div.main {
+	padding-top: 20px;
+}
+div.menu_bar {
+	width: 100%;
+	position: fixed;
+	height: 30px;
+	padding: 5px;
+	box-sizing: border-box;
+	background-color:  rgba(0, 0, 0, 0.3);
+}
+div.menu_bar .menu_button {
+	float: left;
+}
+div.menu_bar .back_button {
+	float: right;
+}
+li.settings {
+	display: block;
+	position: absolute;
+	padding: 10px;
+	margin-left: 20px;
+}
+li.add {
+	display: block;
+	position: absolute;
+	padding: 10px;
+	margin-right: 20px;
+	right: 0;
+	background: none;
+}

@@ -1,0 +1,16 @@
+<div class="pages_flex_wrapper">
+	<h3><%=list.get('name')%></h3>
+	<ul class="propertiesList">
+		<%_.each(list.get('properties').models, function (prop) { %>
+			<li class="propertiesList_list houser_prop_item" data-id=<%=prop.get('account_id')%>>
+				<div class="propertiesList_item_set">
+					<span class="propertiesList_item_primary"><%=prop.get('address')%></span>
+					<span class="propertiesList_item_primary">$45,000</span>
+				</div>
+				<div class="propertiesList_item_set">
+					<span class="propertiesList_item_secondary"><%=prop.get('address')%></span>
+				</div>
+			</li>
+		<%});%>
+	</ul>
+</div>

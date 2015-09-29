@@ -1,0 +1,68 @@
+/*Property Wrapper*/
+.property {
+   height: 100%;
+   box-sizing: border-box;
+   display: flex;
+   display: -webkit-flex;
+   flex-direction: column;
+   -webkit-flex-direction: column;
+   z-index: 1;
+}
+.propertyImage_wrapper {
+   width: 100%;
+   max-height: 50%;
+   height: 225px; /*temp*/
+   padding: 5px;
+   box-sizing: border-box;
+   background-color: gray;
+   overflow: hidden;
+   text-align: center;
+}
+.propertyImage {
+   position: relative;
+   top: -30px;
+   max-width: 100%;
+}
+.propertyDetails {
+   padding: 5px 15px;
+   max-height: 50%;
+}
+.propertyDetails_address {
+   text-align: center;
+   margin: 5px;
+   font-size: 10pt;
+}
+.propertyDetails_primary {
+   text-align: center;
+   margin: 5px;
+   font-size: 13pt;
+   box-sizing: border-box;
+}
+.propertyDetails_secondary {
+   text-align: center;
+   margin: 5px;
+   font-size: 10pt;
+}
+.propertyDetials_price {
+   text-align: center;
+   margin: 5px;
+   font-size: 10pt;
+}
+.propertyDetails_additional {
+   margin: 5px;
+   max-width: 450px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.propertyDetails_valuation {
+   margin: 5px 25px;
+   padding: 0;
+   font-size: 10pt;
+}
+
+.propertyDetails_history {
+   margin: 5px 25px;
+   padding: 0;
+   font-size: 10pt;
+}
+/*Property Wrapper*/

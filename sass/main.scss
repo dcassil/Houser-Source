@@ -1,0 +1,26 @@
+html, body {
+   background-color: #CC5858;
+   color: white;
+   margin: 0px;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   box-sizing: border-box;
+}
+
+.wrapper {
+	position: absolute;
+	top: 45px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.ui-loader.ui-corner-all.ui-body-a.ui-loader-default {
+	display: none;
+}
+.temp {
+	position: absolute;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 100%;
+}

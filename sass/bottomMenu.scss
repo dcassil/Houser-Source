@@ -1,0 +1,32 @@
+/*Bottom Menu*/
+.bottomMenu {
+   width: 100%;
+   height: 30px;
+   padding: 5px 25px;
+   box-sizing: border-box;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   border-top: 1px solid white;
+	background-color: #CC5858;
+   display: -webkit-flex;
+   display: flex;
+}
+.bottomMenu_item {
+   position: relative;
+   width: 75px;
+}
+.bottomMenu_item.left {
+   float: left;
+   text-align: left;
+}
+.bottomMenu_item.center {
+   width: 100%;
+   text-align: center;
+}
+.bottomMenu_item.right {
+   float: right;
+   text-align: right;
+}
+/*Bottom Menu*/

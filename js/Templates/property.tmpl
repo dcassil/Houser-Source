@@ -1,0 +1,52 @@
+<div class="property">
+	<div class="propertyImage_wrapper">
+		<img class="propertyImage">
+	</div>
+	<div class="propertyDetails">
+		<div class="propertyDetails_address">
+			<span><%=prop.get('address')%></span>
+			<span>|</span>
+			<span><%=prop.get('city')%></span>
+		</div>
+
+		<div class="propertyDetails_primary">
+			<span class="propertyDetails_primary_item"><%=prop.get('beds')%> Beds</span>
+			<span class="propertyDetails_primary_item">|</span>
+			<span class="propertyDetails_primary_item"><%=prop.get('baths')%> Baths</span>
+			<span class="propertyDetails_primary_item">|</span>
+			<span class="propertyDetails_primary_item"><%=prop.get('sqft')%> sqft</span>
+			<span class="propertyDetails_primary_item">|</span>
+			<span class="propertyDetails_primary_item">Built <%=prop.get('year_built')%></span>
+		</div>
+		<div class="propertyDetails_secondary">
+			<span class="propertyDetails_secondary_item">Lot <%=prop.get('lot')%> sqft</span>
+		</div>
+		<div class="propertyDetials_price">
+			<span class="propertyDetials_price_item">Price $<%=prop.get('Appraisal_Value')%> (min $<%= parseInt(prop.get('Appraisal_Value')) * .666%>)</span>
+		</div>
+		<div class="propertyDetails_additional">
+			<span>Zillow Valuation</span>
+			<ul class="propertyDetails_valuation">
+				<li>
+					<span class="propertyDetails_valuation_item">Low: $<%=prop.get('zest_low')%></span>
+				</li>
+				<li>
+					<span class="propertyDetails_valuation_item">AVG: $<%=prop.get('zest_avg')%></span>
+				</li>
+				<li>
+					<span class="propertyDetails_valuation_item">High: $<%=prop.get('zest_high')%></span>
+				</li>
+			</ul>
+			<span>Zillow Property History</span>
+			<ul class="propertyDetails_history">
+				<li>
+					<span class="propertyDetails_history_item">Date: <%=prop.get('last_sold_date')%></span>
+				</li>
+				<li>
+					<span class="propertyDetails_history_item">Price: <%=prop.get('last_sold_price')%></span>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
