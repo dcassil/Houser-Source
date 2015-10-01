@@ -9,8 +9,8 @@ define([], function () {
 				live: 'http://houser-2.apphb.com/WebUtilities/DetailsWebService.asmx/',
 				dev: 'http://houser/WebUtilities/DetailsWebService.asmx/'
 			},
-			api_url: {
-				zillow_deep_search: 'http://www.zillow.com/webservice/GetDeepSearchResults.htm'
+			api: {
+				zillow: 'http://www.zillow.com/webservice/'
 			},
 			service: {
 				details: {

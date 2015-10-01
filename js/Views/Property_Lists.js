@@ -80,13 +80,13 @@ define([
 				);
 
 				 _.each(list, function(item) {
-					 var parsePropertyObject = new Parse.Object('properties', item);
-					 parsePropertyObject.save({key: key});
-					 parse_prop_collection.push(parsePropertyObject);
+					 //var parsePropertyObject = new Parse.Object('properties', item);
+					 //parsePropertyObject.save({key: key});
+					 //parse_prop_collection.push(parsePropertyObject);
 				 })
-				var parsePropertyCollection = new Parse.Object('PropertyCollections');
-				parsePropertyCollection.add(parse_prop_collection);
-				parsePropertyCollection.save({key: key});
+				//var parsePropertyCollection = new Parse.Object('PropertyCollections');
+				//parsePropertyCollection.add(parse_prop_collection);
+				//parsePropertyCollection.save({key: key});
 			});
 
 			//console.log(self.property_list_collections);
