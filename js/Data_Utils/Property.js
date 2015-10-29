@@ -9,6 +9,39 @@ define(['js/ajax', './utility', 'js/xml',], function (ajax, utility, xml) {
 			getSherifSaleRecordForDate: function (date) {
 				return ajax.post({sDate: date}, ajax.service.details.getSaleRecord);
 			},
+			getAccountData: function (account_ids) {
+				var self = this,
+					query = Parse.Query('Account');
+
+				query.query.containedIn("ACCOUNTNO", account_ids);
+
+				query.find({
+					success: function(results) {
+						console.log(results);
+					},
+					error: function(error) {
+						console.log(error);
+					}
+				})
+			},
+			getImprovementData: function (account_ids) {
+				var self = this,
+					deferred = $.Deferred(),
+					query = new Parse.Query('Improvement');
+
+				query.containedIn("ACCOUNTNO", account_ids);
+
+				query.find({
+					success: function(results) {
+						deferred.resolve(results);
+					},
+					error: function(error) {
+						deferred.reject(error);
+					}
+				})
+
+				return deferred;
+			},
 			getZillowDeepSearch: function (model) {
 				var self = this,
 					deferred = $.Deferred(),

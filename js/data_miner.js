@@ -6,7 +6,7 @@ define(['js/ajax'], function (ajax) {
 					ACCOUNTNO: accountid,
 					BUILDING: 1
 				}
-				
+
 			}
 		};
 	};

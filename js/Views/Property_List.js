@@ -1,8 +1,9 @@
 define([
 	'Views/SubViewSuper',
 	'text!Templates/property_list.tmpl',
-	'js/ajax'
-], function (SubView, _template, ajax) {
+	'js/ajax',
+	'js/Data_Utils/Property'
+], function (SubView, _template, ajax, property_util) {
 	'use strict';
 
 	var View = SubView.extend({
@@ -24,6 +25,8 @@ define([
 			options = options || {};
 
 			self.model = HOUSER.current_view_model = HOUSER.current_list;
+
+			self.addAdditionalDataToModel();
 			self.render();
 		},
 
@@ -40,6 +43,16 @@ define([
 				$('.signin_flex_form').addClass('show');
 			}, 100);
 
+		},
+		addAdditionalDataToModel: function() {
+			var self = this,
+				account_ids;
+
+			account_ids = self.model.get('properties').pluck('AccountNumber');
+			property_util.getImprovementData(account_ids).done(function (data) {
+				self.model.set('extra_data', data);
+				console.log(self.model);
+			});
 		},
 		propClick: function (e) {
 			var self = this,
